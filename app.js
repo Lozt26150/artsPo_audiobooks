@@ -595,7 +595,7 @@ async function fetchAndParseFeeds() {
       const book = parseFeed(xml, feed.id);
       if (book) results.push(book);
     } catch (err) {
-      console.error(`Erreur lors du chargement du flux ${feed.id}:`, err);
+      console.error('Erreur lors du chargement du flux ' + feed.id + ':', err);
       showToast(`Erreur lors du chargement de ${feed.id}. Vérifiez votre connexion.`);
     }
   }
@@ -713,7 +713,7 @@ function parseFeed(xmlText, feedId) {
       episodes
     };
   } catch (err) {
-    console.error(`Erreur lors du parsing du flux ${feedId}:`, err);
+    console.error('Erreur lors du parsing du flux ' + feedId + ':', err);
     return null;
   }
 }
