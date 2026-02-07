@@ -621,8 +621,9 @@ function parseFeed(xmlText, feedId) {
     // Extraction des infos du channel
     const title = channel.querySelector('title')?.textContent || 'Sans titre';
     const description = channel.querySelector('description')?.textContent || '';
-    const author = channel.querySelector('itunes\\:author')?.textContent ||
-                   channel.querySelector('[name="itunes:author"]')?.textContent || 'Auteur inconnu';
+    const author = channel.querySelector('itunes\\:author, author')?.textContent || 
+               channel.getElementsByTagNameNS('*', 'author')[0]?.textContent ||
+               'Auteur inconnu';
     const copyright = channel.querySelector('copyright')?.textContent || '';
 
     // Image iTunes
