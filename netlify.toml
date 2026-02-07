@@ -4,7 +4,7 @@
 # Proxy RSS feeds to avoid CORS
 [[redirects]]
   from = "/api/feed/*"
-  to = "https://artspo-livresaudio.store/index.php/feed/:splat"
+  to = "https://artspo-livresaudio.store/feed/:splat"
   status = 200
   force = true
 
