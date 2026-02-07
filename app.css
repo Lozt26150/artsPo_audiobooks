@@ -1314,3 +1314,8 @@ img {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-text-secondary);
 }
+/* Fix: Hide transcript by default */
+#view-transcript:not(.active) {
+  display: none !important;
+}
+
