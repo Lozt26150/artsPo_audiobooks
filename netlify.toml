@@ -1,0 +1,48 @@
+[build]
+  publish = "."
+
+# Proxy RSS feeds to avoid CORS
+[[redirects]]
+  from = "/api/feed/*"
+  to = "https://artspo-livresaudio.store/index.php/feed/:splat"
+  status = 200
+  force = true
+
+# Proxy audio files for offline download
+[[redirects]]
+  from = "/api/audio/*"
+  to = "https://artspo-livresaudio.store/wp-content/uploads/:splat"
+  status = 200
+  force = true
+
+# Proxy cover images
+[[redirects]]
+  from = "/api/images/*"
+  to = "https://artspo-livresaudio.store/wp-content/uploads/:splat"
+  status = 200
+  force = true
+
+# SPA fallback
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache control for static assets
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/sw.js"
+  [headers.values]
+    Cache-Control = "no-cache"

@@ -1,0 +1,27 @@
+{
+  "name": "ArtsPo Livres Audio",
+  "short_name": "ArtsPo",
+  "description": "Livres-audio contemporains par les Éditions ArtsPo & Harpo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f7",
+  "theme_color": "#1a252f",
+  "orientation": "portrait",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "/assets/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["books", "entertainment"],
+  "shortcuts": [
+    {
+      "name": "Bibliothèque",
+      "url": "/#/library",
+      "description": "Accéder à la bibliothèque"
+    }
+  ]
+}

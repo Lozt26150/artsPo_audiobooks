@@ -1,0 +1,57 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- A subtle gradient to simulate the look of fresh ink, 
+         though the geometry is suitable for single-color production -->
+    <linearGradient id="inkGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a252f;stop-opacity:1" />
+    </linearGradient>
+    <filter id="inkBleed" x="-5%" y="-5%" width="110%" height="110%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+    </filter>
+  </defs>
+
+  <!-- Group applying the ink style -->
+  <g fill="url(#inkGradient)" filter="url(#inkBleed)">
+    
+    <!-- Outer Stamp Ring -->
+    <path d="M256 24C127.9 24 24 127.9 24 256s103.9 232 232 232 232-103.9 232-232S384.1 24 256 24zm0 434c-111.6 0-202-90.4-202-202S144.4 54 256 54s202 90.4 202 202-90.4 202-202 202z"/>
+    
+    <!-- Inner Thin Ring -->
+    <path d="M256 70c-102.7 0-186 83.3-186 186s83.3 186 186 186 186-83.3 186-186S358.7 70 256 70zm0 362c-97 0-176-79-176-176S159 80 256 80s176 79 176 176-79 176-176 176z" opacity="0.8"/>
+
+    <!-- The Harfang (Snowy Owl) Logo
+         Designed as a stencil: The owl is formed by the negative space and ink details. -->
+    <g transform="translate(0, 20)">
+      <!-- Main Head Shape (Ink Background for the head area to define the white face via cutout) -->
+      <!-- Actually, for a Snowy Owl, the bird is white. So we draw the shadows and features in ink. -->
+      
+      <!-- Brow / Forehead Plumage -->
+      <path d="M160 180c0-20 30-40 96-40s96 20 96 40c0 15-20 25-35 30-10 3-40 5-61 5s-51-2-61-5c-15-5-35-15-35-30z"/>
+
+      <!-- Eyes (The intense stare) -->
+      <path d="M185 210c-15 0-28 10-28 25 0 12 8 22 20 28 2 .8 5 1 8 1 15 0 28-12 28-28 0-16-12-26-28-26zm5 28c-3 0-5-2.2-5-5s2-5 5-5 5 2.2 5 5-2 5-5 5z"/>
+      <path d="M327 210c-16 0-28 10-28 26 0 16 13 28 28 28 3 0 6-.2 8-1 12-6 20-16 20-28 0-15-13-25-28-25zm-5 23c0-2.8 2.2-5 5-5s5 2.2 5 5-2.2 5-5 5-5-2.2-5-5z"/>
+
+      <!-- Beak (Sharp and tucked) -->
+      <path d="M256 245c-8 0-14 2-18 6l18 36 18-36c-4-4-10-6-18-6z"/>
+
+      <!-- Facial Disc Outline / Feathers (Framing the face) -->
+      <path d="M130 200c-5 20-5 60 10 90 10 20 30 35 50 45l10 5c-15-5-35-15-45-35-15-30-15-70-10-90-2-5-10-10-15-15z"/>
+      <path d="M382 200c5 20 5 60-10 90-10 20-30 35-50 45l-10 5c15-5 35-15 45-35 15-30 15-70 10-90 2-5 10-10 15-15z"/>
+
+      <!-- Chest/Neck Plumage (The characteristic spots of a Harfang) -->
+      <path d="M256 300l-10 15h20z"/>
+      <path d="M226 315l-8 12h16z"/>
+      <path d="M286 315l-8 12h16z"/>
+      <path d="M200 330l-6 10h12z"/>
+      <path d="M312 330l-6 10h12z"/>
+      <path d="M256 340l-8 12h16z"/>
+
+      <!-- Bottom framing curve -->
+      <path d="M180 360c20 15 45 20 76 20s56-5 76-20c-20 5-45 8-76 8s-56-3-76-8z" opacity="0.7"/>
+    </g>
+  </g>
+</svg>
