@@ -1078,7 +1078,7 @@ async function renderBookDetail(book) {
 
       const chapterNumber = document.createElement('div');
       chapterNumber.className = 'chapter-number';
-      chapterNumber.textContent = episode.episodeNumber || (episode.index + 1);
+      chapterNumber.textContent = (episode.index + 1);
 
       const chapterInfo = document.createElement('div');
       chapterInfo.className = 'chapter-info';
@@ -1849,7 +1849,9 @@ async function init() {
         updateMiniPlayer();
       }
     }
-
+    // Ajouter data-book-id pour le dégradé de couleur
+    document.getElementById('view-player').setAttribute('data-book-id', book.id);
+    
     // Gestion du routage par hash
     window.addEventListener('hashchange', handleRoute);
     window.addEventListener('popstate', handleRoute);

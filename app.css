@@ -1319,3 +1319,38 @@ img {
   display: none !important;
 }
 
+/* === CORRECTIONS CSS === */
+
+/* 1. Couverture player - forcer carré avec object-fit contain */
+#player-artwork {
+  object-fit: contain !important;
+  background: #000;
+}
+
+/* 2. Dégradés de couleur par livre */
+#view-player[data-book-id="seneque"] {
+  background: linear-gradient(135deg, #2d5016 0%, #4a7c1e 50%, #8b7355 100%);
+}
+
+#view-player[data-book-id="contrun"] {
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 50%, #8b7355 100%);
+}
+
+#view-player[data-book-id="luciole"] {
+  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%);
+}
+
+/* 3. Masquer la navigation sur la page player */
+#view-player.active ~ #bottom-nav {
+  display: none;
+}
+
+/* 4. Plus d'espace en bas pour les boutons */
+#player-secondary {
+  margin-bottom: 80px;
+}
+
+/* 5. Logo rouge sur page À propos */
+.about-logo {
+  filter: invert(27%) sepia(98%) saturate(6478%) hue-rotate(356deg) brightness(91%) contrast(115%);
+
