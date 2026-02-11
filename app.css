@@ -1357,17 +1357,17 @@ img {
 
 /* 6. Dégradés de couleur pour la page livre (view-book) */
 #view-book[data-book-id="seneque"] {
-  background: linear-gradient(135deg, #2d5016 0%, #4a7c1e 50%, #8b7355 100%);
+  background: linear-gradient(135deg, #2d5016 0%, #4a7c1e 50%, #8b7355 100%) !important;
   min-height: 100vh;
 }
 
 #view-book[data-book-id="contrun"] {
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 50%, #8b7355 100%);
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 50%, #8b7355 100%) !important;
   min-height: 100vh;
 }
 
 #view-book[data-book-id="luciole"] {
-  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%);
+  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%) !important;
   min-height: 100vh;
 }
 
@@ -1390,4 +1390,18 @@ img {
 /* 9. Chapitres lisibles sur fond dégradé */
 .chapter-card {
   background: rgba(255, 255, 255, 0.95);
+}
+
+.chapter-title {
+  color: #1a202c !important;
+}
+
+.chapter-duration {
+  color: #718096 !important;
+}
+
+/* Titre de section "Chapitres" en blanc */
+#chapter-list h3 {
+  color: white;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
