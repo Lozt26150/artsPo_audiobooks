@@ -1352,7 +1352,7 @@ img {
 
 /* 5. Logo rouge sur page À propos */
 .about-logo {
-  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  filter: brightness(0) saturate(100%);
 }
 
 /* 6. Dégradés de couleur pour la page livre (view-book) */
