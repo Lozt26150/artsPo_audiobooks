@@ -503,7 +503,7 @@ img {
    ============================================================================ */
 
 #view-player {
-  background: linear-gradient(147deg, #030b49,#030663,#b8390f);
+  background: linear-gradient(147deg, #00010a,#03053f,#b8390f);
   color: var(--color-text-on-dark);
   display: none;
   flex-direction: column;
