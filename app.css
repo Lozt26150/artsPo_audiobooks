@@ -1391,20 +1391,172 @@ img {
 }
 
 /* 9. Chapitres lisibles sur fond dégradé */
-.chapter-card {
-  background: rgba(255, 255, 255, 0.95);
+.chapter-item {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: transform var(--transition-short);
+}
+
+.chapter-item:active {
+  transform: scale(0.99);
+}
+
+.chapter-number {
+  width: 32px;
+  height: 32px;
+  background: var(--color-accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.chapter-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 
 .chapter-title {
-  color: #1a202c !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin: 0;
+  /* Permettre le retour à la ligne au lieu de couper */
+  overflow-wrap: break-word;
+  word-break: break-word;
+  flex: 1;
+  min-width: 200px;
 }
 
 .chapter-duration {
-  color: #718096 !important;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.chapter-progress {
+  height: 3px;
+  background: var(--color-accent);
+  border-radius: 1.5px;
+  margin-top: 6px;
+  transition: width var(--transition-normal);
+  width: 100%;
+}
+
+/* Icône de téléchargement à droite */
+.chapter-download-icon {
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 /* Titre de section "Chapitres" en blanc */
 #chapter-list h3 {
   color: white;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Chapitres - layout horizontal */
+.chapter-item {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 12px;
+  align-items: center;
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: transform var(--transition-short);
+}
+
+.chapter-item:active {
+  transform: scale(0.99);
+}
+
+.chapter-number {
+  grid-row: 1 / 3;
+  width: 40px;
+  height: 40px;
+  background: var(--color-accent);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.chapter-info {
+  grid-row: 1;
+  grid-column: 2;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.chapter-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #1a202c !important;
+  flex: 1;
+  min-width: 150px;
+}
+
+.chapter-duration {
+  font-size: 0.8rem;
+  color: #718096 !important;
+  white-space: nowrap;
+}
+
+.chapter-actions {
+  grid-row: 1 / 3;
+  grid-column: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-download-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.chapter-progress-bar {
+  grid-row: 2;
+  grid-column: 2;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 1.5px;
+  overflow: hidden;
+}
+
+.chapter-progress-fill {
+  height: 100%;
+  background: var(--color-accent);
+  transition: width var(--transition-normal);
 }
