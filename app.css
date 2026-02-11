@@ -1357,19 +1357,19 @@ img {
 
 /* 6. Dégradés de couleur pour la page livre (view-book) */
 #view-book[data-book-id="seneque"] {
-  background: linear-gradient(180deg, #2d5016 0%, #4a7c1e 30%, #8b7355 60%, #2d5016 100%) !important;
+  background: linear-gradient(139deg, #a27f44, #5c251f, #df90d4) !important;
   background-size: 100% 100vh;
   min-height: 100vh;
 }
 
 #view-book[data-book-id="contrun"] {
-  background: linear-gradient(180deg, #1e3a5f 0%, #2c5f8d 30%, #8b7355 60%, #1e3a5f 100%) !important;
+  background: linear-gradient(42deg, #4447a2,#465c1f,#83bfce) !important;
   background-size: 100% 100vh;
   min-height: 100vh;
 }
 
 #view-book[data-book-id="luciole"] {
-  background: linear-gradient(180deg, #4a1e5f 0%, #6b2c8d 30%, #8b7355 60%, #4a1e5f 100%) !important;
+  background: linear-gradient(142deg, #a14479,#cc763a,#a1ab54) !important;
   background-size: 100% 100vh;
   min-height: 100vh;
 }
