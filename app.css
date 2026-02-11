@@ -1572,3 +1572,18 @@ img {
 #view-about {
   background: linear-gradient(231deg, #9e6170,#709e61,#61709e);
 }
+
+/* Texte bibliothèque en noir */
+.library-tagline {
+  color: #1a202c !important;
+  font-weight: 500;
+}
+
+/* Texte À propos en noir */
+.about-credits p {
+  color: #1a202c !important;
+}
+
+.about-version {
+  color: #1a202c !important;
+}
