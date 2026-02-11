@@ -1352,7 +1352,7 @@ img {
 
 /* 5. Logo rouge sur page À propos */
 .about-logo {
-  filter: brightness(0) saturate(100%) invert(34%) sepia(89%) saturate(2567%) hue-rotate(346deg) brightness(95%) contrast(94%);
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
 }
 
 /* 6. Dégradés de couleur pour la page livre (view-book) */
@@ -1392,12 +1392,13 @@ img {
 
 /* 9. Chapitres lisibles sur fond dégradé */
 .chapter-item {
-  background: var(--color-surface);
+  background: rgba(255, 255, 255, 0.92);/* Légèrement transparent */
   border-radius: var(--radius-md);
-  padding: 8px 12px;
+  padding: 12px 16px;
+  margin-bottom: 12px; /* Ajout d'espace entre les chapitres */
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   box-shadow: var(--shadow-card);
   cursor: pointer;
   transition: transform var(--transition-short);
@@ -1559,4 +1560,13 @@ img {
   height: 100%;
   background: var(--color-accent);
   transition: width var(--transition-normal);
+}
+/* Background bibliothèque */
+#view-library {
+  background: linear-gradient(90deg,#000000,#731212,#8a0303);
+}
+
+/* Background À propos */
+#view-about {
+  background: linear-gradient(90deg,#ffcb13,#ff8605,#d73920,#ff8605,#ffcb13);
 }
