@@ -1563,14 +1563,14 @@ img {
 }
 /* Background bibliothèque */
 #view-library {
-  background: linear-gradient(301deg, #e55b1f,#d2b89d,#640c0c);
+  background: linear-gradient(225deg, #e9e9d8,#e7d7c5,#e9e9d8);
   background-size: 100% 100vh;
   min-height: 100vh;
 }
 
 /* Background À propos */
 #view-about {
-  background: linear-gradient(301deg, #e55b1f,#d2b89d,#640c0c);
+  background: linear-gradient(225deg, #e9e9d8,#e7d7c5,#e9e9d8);
   background-size: 100% 100vh;
   min-height: 100vh;
 }
