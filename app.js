@@ -621,7 +621,7 @@ function parseFeed(xmlText, feedId) {
     // Extraction des infos du channel
     const title = channel.querySelector('title')?.textContent || 'Sans titre';
     const description = channel.querySelector('description')?.textContent || '';
-    const author = channel.querySelector('itunes\\:author, author')?.textContent || 
+    const author = channel.querySelector('itunes\\:author, author')?.textContent ||
                channel.getElementsByTagNameNS('*', 'author')[0]?.textContent ||
                'Auteur inconnu';
     const copyright = channel.querySelector('copyright')?.textContent || '';
@@ -1846,12 +1846,12 @@ async function init() {
       if (book) {
         state.currentBook = book;
         state.currentEpisodeIndex = lastEpisodeIndex;
+        // Ajouter data-book-id pour le dégradé de couleur
+        document.getElementById('view-player').setAttribute('data-book-id', book.id);
         updateMiniPlayer();
       }
     }
-    // Ajouter data-book-id pour le dégradé de couleur
-    document.getElementById('view-player').setAttribute('data-book-id', book.id);
-    
+
     // Gestion du routage par hash
     window.addEventListener('hashchange', handleRoute);
     window.addEventListener('popstate', handleRoute);
