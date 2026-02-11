@@ -1392,10 +1392,10 @@ img {
 
 /* 9. Chapitres lisibles sur fond dégradé */
 .chapter-item {
-  background: rgba(255, 255, 255, 0.92);/* Légèrement transparent */
+  background: rgba(255, 255, 255, 0.50);/* Légèrement transparent */
   border-radius: var(--radius-md);
   padding: 12px 16px;
-  margin-bottom: 12px; /* Ajout d'espace entre les chapitres */
+  margin-bottom: 20px; /* Ajout d'espace entre les chapitres */
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1563,12 +1563,12 @@ img {
 }
 /* Background bibliothèque */
 #view-library {
-  background: linear-gradient(90deg,#b0814f,#cd955b,#d6aa7a);
+  background: linear-gradient(90deg,#880015,#f9d07a,#ca3305);
   background-size: 100% 100vh;
   min-height: 100vh;
 }
 
 /* Background À propos */
 #view-about {
-  background: linear-gradient(90deg,#b0814f,#cd955b,#d6aa7a);
+  background: linear-gradient(90deg,#880015,#f9d07a,#ca3305);
 }
