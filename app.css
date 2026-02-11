@@ -1329,15 +1329,15 @@ img {
 
 /* 2. Dégradés de couleur par livre */
 #view-player[data-book-id="seneque"] {
-  background: linear-gradient(135deg, #2d5016 0%, #4a7c1e 50%, #8b7355 100%);
+  background: linear-gradient(135deg, #2d5016 0%, #4a7c1e 50%, #8b7355 100%) !important;
 }
 
 #view-player[data-book-id="contrun"] {
-  background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 50%, #8b7355 100%);
+  background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 50%, #8b7355 100%) !important;
 }
 
 #view-player[data-book-id="luciole"] {
-  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%);
+  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%) !important;
 }
 
 /* 3. Masquer la navigation sur la page player */
@@ -1350,7 +1350,7 @@ img {
   margin-bottom: 80px;
 }
 
-/* 5. Logo rouge sur page À propos */
+/* 5. Logo noir sur page À propos */
 .about-logo {
   filter: brightness(0) saturate(100%);
 }
