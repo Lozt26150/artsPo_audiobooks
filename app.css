@@ -503,7 +503,7 @@ img {
    ============================================================================ */
 
 #view-player {
-  background: linear-gradient(135deg, var(--color-player-bg) 0%, #0f1620 100%);
+  background: linear-gradient(147deg, #030b49,#030663,#b8390f);
   color: var(--color-text-on-dark);
   display: none;
   flex-direction: column;
@@ -1329,7 +1329,7 @@ img {
 
 /* 2. Dégradés de couleur par livre */
 #view-player[data-book-id="seneque"] {
-  background: linear-gradient(135deg, #2d5016 0%, #4a7c1e 50%, #8b7355 100%) !important;
+  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%) !important;
 }
 
 #view-player[data-book-id="contrun"] {
@@ -1337,7 +1337,7 @@ img {
 }
 
 #view-player[data-book-id="luciole"] {
-  background: linear-gradient(135deg, #4a1e5f 0%, #6b2c8d 50%, #8b7355 100%) !important;
+  background: linear-gradient(147deg, #030b49,#030663,#b8390f) !important;
 }
 
 /* 3. Masquer la navigation sur la page player */
