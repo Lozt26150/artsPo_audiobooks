@@ -1357,7 +1357,7 @@ img {
 
 /* 6. Dégradés de couleur pour la page livre (view-book) */
 #view-book[data-book-id="seneque"] {
-  background: linear-gradient(139deg, #a27f44, #5c251f, #df90d4) !important;
+  background: linear-gradient(29deg, #eda60c,#b0a421,#02b0b5) !important;
   background-size: 100% 100vh;
   min-height: 100vh;
 }
@@ -1563,12 +1563,12 @@ img {
 }
 /* Background bibliothèque */
 #view-library {
-  background: linear-gradient(90deg,#880015,#f9d07a,#ca3305);
+  background: linear-gradient(231deg, #9e6170,#709e61,#61709e);
   background-size: 100% 100vh;
   min-height: 100vh;
 }
 
 /* Background À propos */
 #view-about {
-  background: linear-gradient(90deg,#880015,#f9d07a,#ca3305);
+  background: linear-gradient(231deg, #9e6170,#709e61,#61709e);
 }
