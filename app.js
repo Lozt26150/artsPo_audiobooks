@@ -1019,7 +1019,8 @@ async function renderLibrary(books) {
  */
 async function renderBookDetail(book) {
   state.currentBook = book;
-
+  // Ajouter data-book-id pour le dégradé de couleur
+  document.getElementById('view-book').setAttribute('data-book-id', book.id);
   const cover = document.getElementById('book-cover');
   const title = document.getElementById('book-title');
   const author = document.getElementById('book-author');
