@@ -1635,3 +1635,32 @@ img {
   padding-bottom: env(safe-area-inset-bottom);
   height: calc(var(--nav-height) + env(safe-area-inset-bottom));
 }
+/* === FIX BACKGROUNDS COVERAGE === */
+
+/* Assurer que les backgrounds couvrent toute la hauteur */
+#app-content {
+  background: transparent;
+}
+
+.view {
+  min-height: 100vh;
+}
+
+/* Backgrounds fixes pour toutes les pages */
+#view-library {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #dee2e6 100%) !important;
+  background-attachment: fixed;
+}
+
+#view-about {
+  background: linear-gradient(135deg, #f1f3f5 0%, #e9ecef 50%, #ced4da 100%) !important;
+  background-attachment: fixed;
+}
+
+/* Backgrounds livres - version fixée */
+#view-book[data-book-id="seneque"],
+#view-book[data-book-id="contrun"],
+#view-book[data-book-id="luciole"] {
+  background-attachment: fixed !important;
+  min-height: 100vh !important;
+}
