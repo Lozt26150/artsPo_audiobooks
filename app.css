@@ -33,13 +33,15 @@
   --transition-short: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
+/* Force background noir sur body pour éviter le gris */
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
 
 #app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  position: relative;
-  background: transparent !important; /* AJOUT - Force transparent */
+  background: transparent;
 }
 
 #app-content {
