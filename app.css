@@ -1401,6 +1401,12 @@ img {
   min-height: 100vh;
 }
 
+#view-book[data-book-id="hommesemence"] {
+  background: linear-gradient(231deg, #9e6170,#709e61,#61709e) !important;
+  background-attachment: fixed; /* Fixe le dégradé pendant le scroll */
+  min-height: 100vh;
+}
+
 /* 7. Couverture carrée sur la page livre */
 #book-cover {
   aspect-ratio: 1 / 1;
@@ -1685,7 +1691,8 @@ img {
 /* Backgrounds livres - version fixée */
 #view-book[data-book-id="seneque"],
 #view-book[data-book-id="contrun"],
-#view-book[data-book-id="luciole"] {
+#view-book[data-book-id="luciole"]
+#view-book[data-book-id="hommesemence"]{
   background-attachment: fixed !important;
   min-height: 100vh !important;
 }
