@@ -1,6 +1,37 @@
 [build]
   publish = "."
 
+  # Redirections spécifiques pour les podcasts Blubrry (AVANT la règle générique)
+  [[redirects]]
+    from = "/api/feed/podcast"
+    to = "https://artspo-livresaudio.store/index.php/feed/podcast"
+    status = 200
+    force = true
+
+  [[redirects]]
+    from = "/api/feed/podcast2"
+    to = "https://artspo-livresaudio.store/index.php/feed/podcast2"
+    status = 200
+    force = true
+
+  [[redirects]]
+    from = "/api/feed/podcast3"
+    to = "https://artspo-livresaudio.store/index.php/feed/podcast3"
+    status = 200
+    force = true
+
+  [[redirects]]
+    from = "/api/feed/podcast4"
+    to = "https://artspo-livresaudio.store/index.php/feed/podcast4"
+    status = 200
+    force = true
+
+  # Proxy RSS feeds to avoid CORS (règle générique pour les autres)
+  [[redirects]]
+    from = "/api/feed/*"
+    to = "https://artspo-livresaudio.store/feed/:splat"
+    status = 200
+    force = true
 # Proxy RSS feeds to avoid CORS
 [[redirects]]
   from = "/api/feed/*"
