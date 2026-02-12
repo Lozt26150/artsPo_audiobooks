@@ -1363,6 +1363,10 @@ img {
   background: linear-gradient(147deg, #030b49,#030663,#b8390f) !important;
 }
 
+#view-player[data-book-id="hommesemence"] {
+  background: linear-gradient(231deg, #9e6170,#709e61,#61709e) !important;
+}
+
 /* 3. Masquer la navigation sur la page player */
 #view-player.active ~ #bottom-nav {
   display: none;
