@@ -33,7 +33,20 @@
   --transition-short: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
+/* Force background noir sur body pour éviter le gris */
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
 
+#app {
+  background: transparent;
+}
+
+#app-content {
+  background: transparent !important;
+}
 /* ============================================================================
    RESET & BASE STYLES
    ============================================================================ */
@@ -166,7 +179,11 @@ img {
     opacity: 1;
   }
 }
-
+/* Views doivent remplir tout l'espace */
+.view {
+  min-height: 100vh !important;
+  width: 100%;
+}
 /* ============================================================================
    LIBRARY VIEW
    ============================================================================ */
