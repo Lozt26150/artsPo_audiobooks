@@ -12,6 +12,7 @@ const FEEDS = [
   { id: 'seneque', url: '/api/feed/podcast', fallbackUrl: 'https://artspo-livresaudio.store/index.php/feed/podcast' },
   { id: 'contrun', url: '/api/feed/podcast2', fallbackUrl: 'https://artspo-livresaudio.store/index.php/feed/podcast2' },
   { id: 'luciole', url: '/api/feed/podcast3/', fallbackUrl: 'https://artspo-livresaudio.store/index.php/feed/podcast3/' }
+  { id: 'hommesemence', url: '/api/feed/podcast4',fallbackUrl: 'https://artspo-livresaudio.store/index.php/feed/podcast4' }
 ];
 
 const DB_NAME = 'artspo-audio';
