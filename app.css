@@ -35,7 +35,7 @@
 }
 /* Force background noir sur body pour éviter le gris */
 body {
-  background: #000;
+  background: #000 !important;
   margin: 0;
   padding: 0;
 }
@@ -113,14 +113,13 @@ img {
    LAYOUT: APP STRUCTURE
    ============================================================================ */
 
-#app {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  background: var(--color-bg);
-}
+   #app {
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+     position: relative;
+     background: transparent !important;  /* Force transparent au lieu du gris */
+   }
 
 /* HEADER */
 #app-header {
