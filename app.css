@@ -1596,12 +1596,13 @@ img {
 /* Background bibliothèque */
 #view-library {
   background:
-    radial-gradient(at 7.9% 91%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%),
-    radial-gradient(at 64% 70%, hsla(61, 100%, 88%, 1) 0%, hsla(61, 100%, 88%, 0) 100%),
-    radial-gradient(at 40% 4%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 100%),
-    radial-gradient(at 88% 4%, hsla(206, 44%, 48%, 1) 0%, hsla(206, 44%, 48%, 0) 100%),
-    radial-gradient(at 100% 98%, hsla(32, 80%, 45%, 1) 0%, hsla(32, 80%, 45%, 0) 100%),
-    radial-gradient(at 97% 71%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%);
+  radial-gradient(at 42% 24%, hsla(62, 27%, 74%, 1) 0%, hsla(62, 27%, 74%, 0) 100%),
+  radial-gradient(at 61% 92%, hsla(35, 100%, 45%, 1) 0%, hsla(35, 100%, 45%, 0) 100%),
+  radial-gradient(at 23% 87%, hsla(206, 38%, 45%, 1) 0%, hsla(206, 38%, 45%, 0) 100%),
+  radial-gradient(at 18% 18%, hsla(240, 5%, 37%, 1) 0%, hsla(240, 5%, 37%, 0) 100%),
+  radial-gradient(at 66% 81%, hsla(62, 27%, 74%, 1) 0%, hsla(62, 27%, 74%, 0) 100%),
+  radial-gradient(at 12% 44%, hsla(35, 100%, 45%, 1) 0%, hsla(35, 100%, 45%, 0) 100%),
+  radial-gradient(at 95% 57%, hsla(206, 38%, 45%, 1) 0%, hsla(206, 38%, 45%, 0) 100%);
   background-size: 100% 100vh;
   min-height: 100vh;
 }
@@ -1609,12 +1610,13 @@ img {
 /* Background À propos */
 #view-about {
   background:
-    radial-gradient(at 7.9% 91%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%),
-    radial-gradient(at 64% 70%, hsla(61, 100%, 88%, 1) 0%, hsla(61, 100%, 88%, 0) 100%),
-    radial-gradient(at 40% 4%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 100%),
-    radial-gradient(at 88% 4%, hsla(206, 44%, 48%, 1) 0%, hsla(206, 44%, 48%, 0) 100%),
-    radial-gradient(at 100% 98%, hsla(32, 80%, 45%, 1) 0%, hsla(32, 80%, 45%, 0) 100%),
-    radial-gradient(at 97% 71%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%);
+  radial-gradient(at 42% 24%, hsla(62, 27%, 74%, 1) 0%, hsla(62, 27%, 74%, 0) 100%),
+  radial-gradient(at 61% 92%, hsla(35, 100%, 45%, 1) 0%, hsla(35, 100%, 45%, 0) 100%),
+  radial-gradient(at 23% 87%, hsla(206, 38%, 45%, 1) 0%, hsla(206, 38%, 45%, 0) 100%),
+  radial-gradient(at 18% 18%, hsla(240, 5%, 37%, 1) 0%, hsla(240, 5%, 37%, 0) 100%),
+  radial-gradient(at 66% 81%, hsla(62, 27%, 74%, 1) 0%, hsla(62, 27%, 74%, 0) 100%),
+  radial-gradient(at 12% 44%, hsla(35, 100%, 45%, 1) 0%, hsla(35, 100%, 45%, 0) 100%),
+  radial-gradient(at 95% 57%, hsla(206, 38%, 45%, 1) 0%, hsla(206, 38%, 45%, 0) 100%);
   background-attachment: fixed;
   min-height: 100vh;
 
