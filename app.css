@@ -32,6 +32,8 @@
   --nav-height: 56px;
   --transition-short: 0.2s ease;
   --transition-normal: 0.3s ease;
+  /* ... autres variables ... */
+  --header-height: 64px; /* Pas 56px ! */
 }
 
 body {
@@ -128,7 +130,12 @@ img {
   left: 0;
   right: 0;
   height: var(--header-height);
-  padding-top: var(--safe-top);
+  padding-top: env(safe-area-inset-top); /* insert modif*/
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  background: rgba(44, 44, 46, 0.95);
+  box-shadow: var(--shadow-card);
+  z-index: 100;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
   z-index: 100;
@@ -188,6 +195,7 @@ img {
 .view {
   min-height: 100vh !important;
   width: 100%;
+  padding: 20px 16px;
 }
 /* ============================================================================
    LIBRARY VIEW
