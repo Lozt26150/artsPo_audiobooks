@@ -1595,17 +1595,28 @@ img {
 }
 /* Background bibliothèque */
 #view-library {
-  background: linear-gradient(225deg, #e9e9d8,#e7d7c5,#e9e9d8) !important;
+  background:
+    radial-gradient(at 7.9% 91%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%),
+    radial-gradient(at 64% 70%, hsla(61, 100%, 88%, 1) 0%, hsla(61, 100%, 88%, 0) 100%),
+    radial-gradient(at 40% 4%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 100%),
+    radial-gradient(at 88% 4%, hsla(206, 44%, 48%, 1) 0%, hsla(206, 44%, 48%, 0) 100%),
+    radial-gradient(at 100% 98%, hsla(32, 80%, 45%, 1) 0%, hsla(32, 80%, 45%, 0) 100%),
+    radial-gradient(at 97% 71%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%);
   background-size: 100% 100vh;
   min-height: 100vh;
 }
 
 /* Background À propos */
 #view-about {
-  background: linear-gradient(225deg, #e9e9d8,#e7d7c5,#e9e9d8) !important;
-  background-size: 100% 100vh;
+  background:
+    radial-gradient(at 7.9% 91%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%),
+    radial-gradient(at 64% 70%, hsla(61, 100%, 88%, 1) 0%, hsla(61, 100%, 88%, 0) 100%),
+    radial-gradient(at 40% 4%, hsla(0, 0%, 0%, 1) 0%, hsla(0, 0%, 0%, 0) 100%),
+    radial-gradient(at 88% 4%, hsla(206, 44%, 48%, 1) 0%, hsla(206, 44%, 48%, 0) 100%),
+    radial-gradient(at 100% 98%, hsla(32, 80%, 45%, 1) 0%, hsla(32, 80%, 45%, 0) 100%),
+    radial-gradient(at 97% 71%, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 16%, 0) 100%);
+  background-attachment: fixed;
   min-height: 100vh;
-}
 
 /* Texte bibliothèque en noir */
 .library-tagline {
