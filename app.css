@@ -33,15 +33,15 @@
   --transition-short: 0.2s ease;
   --transition-normal: 0.3s ease;
 }
-/* Force background noir sur body pour éviter le gris */
+
 body {
-  background: #000 !important;
-  margin: 0;
-  padding: 0;
+  /* ... */
+  background: rgb(29, 29, 31); /* Même couleur que #app */
 }
 
 #app {
-  background: transparent;
+  /* ... */
+  background: rgb(29, 29, 31); /* Gris foncé assorti au header */
 }
 
 #app-content {
