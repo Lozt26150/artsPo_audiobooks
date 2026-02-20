@@ -795,24 +795,23 @@ img {
 }
 
 .about-link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 12px 16px;
+  gap: 12px;
+  padding: 14px 24px;
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
-  color: var(--color-accent);
-  font-size: 0.95rem;
+  color: #2c3e50; /* Bleu-gris foncé au lieu du rouge */
   font-weight: 500;
-  transition: all var(--transition-short);
+  box-shadow: var(--shadow-card);
+  transition: transform var(--transition-short);
+  border: 1px solid rgba(44, 62, 80, 0.2); /* Bordure subtile */
 }
 
 .about-link:active {
-  background: var(--color-accent);
-  color: var(--color-text-on-dark);
-  border-color: var(--color-accent);
+  transform: scale(0.98);
+  background: #f8f9fa;
 }
 
 .about-link svg {
@@ -1636,12 +1635,22 @@ img {
 }
 /* === CORRECTIONS MOBILE === */
 
-/* 1. Safe area pour iPhone (notch et barres système) */
+/* Safe area iPhone */
 #app-header {
   padding-top: env(safe-area-inset-top);
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
-  height: calc(var(--header-height) + env(safe-area-inset-top));
+  height: calc(64px + env(safe-area-inset-top));
+}
+
+#app-content {
+  margin-top: calc(64px + env(safe-area-inset-top));
+  padding-bottom: calc(var(--mini-player-height) + var(--nav-height) + env(safe-area-inset-bottom));
+}
+
+/* Views avec padding top pour mobile */
+.view {
+  padding-top: 20px;
 }
 
 /* 2. Contenu décalé pour ne pas être sous le header */
