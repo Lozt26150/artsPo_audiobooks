@@ -1603,7 +1603,7 @@ img {
   radial-gradient(at 66% 81%, hsla(62, 27%, 74%, 1) 0%, hsla(62, 27%, 74%, 0) 100%),
   radial-gradient(at 12% 44%, hsla(35, 100%, 45%, 1) 0%, hsla(35, 100%, 45%, 0) 100%),
   radial-gradient(at 95% 57%, hsla(206, 38%, 45%, 1) 0%, hsla(206, 38%, 45%, 0) 100%);
-  background-size: 100% 100vh;
+  background-attachment: fixed;
   min-height: 100vh;
 }
 
