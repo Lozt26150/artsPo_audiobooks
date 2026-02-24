@@ -1650,12 +1650,6 @@ img {
   min-height: 100vh; /* Force la hauteur minimale */
 }
 
-/* 4. Description scrollable si trop longue */
-#book-description {
-  max-height: none !important;
-  overflow: visible !important;
-}
-
 /* 5. Player - éviter chevauchement avec notch */
 #view-player {
   padding-top: calc(32px + env(safe-area-inset-top));
@@ -1699,4 +1693,9 @@ img {
 #view-book[data-book-id="hommesemence"]{
   background-attachment: fixed !important;
   min-height: 100vh !important;
+}
+/* 4. Description scrollable si trop longue */
+#book-description {
+  max-height: none !important;
+  overflow: visible !important;
 }
