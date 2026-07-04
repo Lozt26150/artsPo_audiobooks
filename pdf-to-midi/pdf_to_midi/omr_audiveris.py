@@ -30,7 +30,15 @@ def run_audiveris_batch(pdf_path: Path, output_dir: Path) -> Path:
     Retourne le chemin du projet .omr généré (book Audiveris)."""
     output_dir.mkdir(parents=True, exist_ok=True)
     subprocess.run(
-        [_audiveris_executable(), "-batch", "-save", "-output", str(output_dir), str(pdf_path)],
+        [
+            _audiveris_executable(),
+            "-batch",
+            "-save",
+            "-output",
+            str(output_dir),
+            "--",
+            str(pdf_path),
+        ],
         check=True,
     )
     omr_project_path = output_dir / f"{pdf_path.stem}.omr"
@@ -59,6 +67,7 @@ def export_musicxml(omr_project_path: Path, output_dir: Path) -> Path:
             "-export",
             "-output",
             str(output_dir),
+            "--",
             str(omr_project_path),
         ],
         check=True,
