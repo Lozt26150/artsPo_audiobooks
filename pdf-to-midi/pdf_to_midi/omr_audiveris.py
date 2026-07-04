@@ -1,11 +1,8 @@
 """Wrapper autour de la CLI Audiveris (OMR batch + éditeur de relecture).
 
-Les options de ligne de commande ci-dessous correspondent à l'interface CLI
-d'Audiveris telle que documentée par le projet. Audiveris n'étant pas
-installé dans cet environnement de développement, ces appels n'ont pas pu
-être exécutés en conditions réelles ici : à vérifier avec `Audiveris -help`
-sur ta machine avant la première exécution, et à ajuster si ta version
-d'Audiveris utilise une syntaxe différente.
+Les options de ligne de commande ci-dessous ont été vérifiées contre la
+sortie de `Audiveris -help` (v5.10.2, macOS arm64) : -batch, -save,
+-transcribe, -export, -output sont bien celles attendues par cette version.
 """
 
 from pathlib import Path
@@ -27,12 +24,15 @@ def _audiveris_executable() -> str:
 
 def run_audiveris_batch(pdf_path: Path, output_dir: Path) -> Path:
     """Lance Audiveris en mode batch (CLI headless) sur le PDF fourni.
-    Retourne le chemin du projet .omr généré (book Audiveris)."""
+    -transcribe force la reconnaissance complète (sans quoi le batch se
+    contente de charger la feuille, laissant l'éditeur GUI sans rien à
+    corriger). Retourne le chemin du projet .omr généré (book Audiveris)."""
     output_dir.mkdir(parents=True, exist_ok=True)
     subprocess.run(
         [
             _audiveris_executable(),
             "-batch",
+            "-transcribe",
             "-save",
             "-output",
             str(output_dir),
@@ -52,7 +52,9 @@ def run_audiveris_batch(pdf_path: Path, output_dir: Path) -> Path:
 def open_audiveris_gui(omr_project_path: Path) -> None:
     """Ouvre l'éditeur graphique Audiveris sur le projet, pour relecture
     et correction manuelle par l'utilisateur. Bloquant : rend la main
-    une fois Audiveris fermé."""
+    une fois Audiveris fermé. Important : l'utilisateur doit enregistrer
+    (Cmd+S) le projet dans Audiveris avant de fermer la fenêtre, sinon
+    les corrections ne sont pas prises en compte par export_musicxml."""
     subprocess.run([_audiveris_executable(), str(omr_project_path)], check=True)
 
 
