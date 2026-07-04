@@ -1,0 +1,8 @@
+name: pdf-to-midi
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - music21

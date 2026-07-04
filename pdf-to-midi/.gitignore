@@ -1,0 +1,9 @@
+corpus_test/
+output/
+*.mid
+*.omr
+*.mxl
+__pycache__/
+*.pyc
+.venv/
+config.local.py
